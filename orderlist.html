@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>产品详情</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="orderlistmain">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>
+			         
+			  </button>
+			  <h1 class="mui-title">订单列表</h1>
+		</header>
+		<div class="clear"></div>
+		<div class="orderlist orderlistM">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">					
+					<a href="#">
+						<h2><i class="icon iconfont">&#xe618;</i>日用品<span>等待付款</span></h2>
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">							
+							<p class='mui-ellipsis-2 col30'>是件幸福的事情件幸福的事情件幸福的事情件幸福的事情件幸福的事情；可是，打呼噜怎么办？</p>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+								<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								<input class="mui-numbox-input" type="number" value="5" />
+								<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+							</div>
+						</div>
+						<div class="totel">
+							<p>实付款：￥125元<span>去付款</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="orderlist Mt8">
+			<div class="ywc">
+				<img class="ywc" src="img/yiwc.png"/>
+			</div>			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">					
+					<a href="#">
+						<h2><i class="icon iconfont">&#xe618;</i>日用品<span><i class="icon iconfont">&#xe61a;</i></span></h2>
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">							
+							<p class='mui-ellipsis-2 col30'>是件幸福的事情件幸福的事情件幸福的事情件幸福的事情件幸福的事情；可是，打呼噜怎么办？</p>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+								<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								<input class="mui-numbox-input" type="number" value="5" />
+								<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+							</div>
+						</div>
+						<div class="totel">
+							<p>实付款：￥125元<span>去付款</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>	
+		
+		<div class="orderlist Mt8">
+			<div class="ywc">
+				<img class="ywc" src="img/yiwc.png"/>
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">					
+					<a href="#">
+						<h2><i class="icon iconfont">&#xe618;</i>日用品<span><i class="icon iconfont">&#xe61a;</i></span></h2>
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">							
+							<p class='mui-ellipsis-2 col30'>是件幸福的事情件幸福的事情件幸福的事情件幸福的事情件幸福的事情；可是，打呼噜怎么办？</p>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+								<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								<input class="mui-numbox-input" type="number" value="5" />
+								<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+							</div>
+						</div>
+						<div class="totel">
+							<p>实付款：￥125元<span>去付款</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>				
+	</div>
+</body>
+</html>

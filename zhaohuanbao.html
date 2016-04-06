@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>召唤宝</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fx.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="symian">
+		<header class="mui-bar mui-bar-nav">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">
+			    <span class="mui-icon mui-icon-left-nav"></span>			    
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">
+			   	 我的贡献
+			    <span class="mui-icon mui-icon-right-nav"></span>
+			  </button>
+			  <h1 class="mui-title">召唤宝</h1>
+		</header>
+
+		<!--
+        	轮播图开始
+        -->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/banner1.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner1.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner1.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner1.jpg">
+						</a>
+					</div>
+		
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/banner1.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>					
+				</div>
+			</div>
+		</div>		
+		<!--
+        	轮播图结束
+        -->
+
+			<!--
+            	公告开始：
+            -->
+            <div class="gonggao">
+				<div class="txtMarquee-left">
+					<b><i class="icon iconfont">&#xe600;</i></b>
+					<div class="bd">
+						<ul class="infoList">
+							<li><a href="#">中国打破了世界软件巨头规则</a><span>[11-11]</span></li>
+							<li><a href="#">施强：高端专业语言教学</a><span>[11-11]</span></li>
+							<li><a href="#">新加坡留学，国际双语课程</a><span>[11-11]</span></li>
+							<li><a href="#">高考后留学日本名校随你选</a><span>[11-11]</span></li>
+							<li><a href="#">教育培训行业优势资源推介</a><span>[11-11]</span></li>
+							<li><a href="#">女友坚持警局完婚不抛弃</a><span>[11-11]</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+			jQuery(".txtMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50});
+			</script>
+		<!--
+        	公告结束：
+        -->
+        <div class="clear"></div>
+		<!--
+        	导航部分
+        -->
+        <div class="bignav">
+        	<ul class="mui-table-view mui-grid-view">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="img/nav01.png">					
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="img/nav02.png">												
+					</a>
+				</li>
+			</ul>
+        </div>
+ 		<!--
+         	导航结束
+         -->
+        <div class="clear"></div>
+         <!--九宫格开始-->
+         <div class="jgg">
+         	<div class="jgg_head">
+         		<h2><i class="icon iconfont">&#xe602;</i>贡献社会，服务优惠</h2>
+         	</div>
+         	<div class="jgg_con">
+         		<div class="mui-content">
+			        <ul class="mui-table-view mui-grid-view mui-grid-9">
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+			                    <div class="jggimg"><img src="img/jgg01.png"/></div>
+			                    <div class="mui-media-body">日用品</div></a></li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+			                    <div class="jggimg"><img src="img/jgg02.png"/></div>
+			                    <div class="mui-media-body">爱大厨</div></a></li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+			                    <div class="jggimg"><img src="img/jgg03.png"/></div>
+			                    <div class="mui-media-body">好养生</div></a></li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+			                    <div class="jggimg"><img src="img/jgg04.png"/></div>
+			                    <div class="mui-media-body">爱美丽</div></a></li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+			                    <div class="jggimg"><img src="img/jgg05.png"/></div>
+			                    <div class="mui-media-body">Man吧</div></a></li>
+			            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 carlast"><div class="carlist_ch"><img src="img/jjkt.png"/></div><a href="#">
+			                    <div class="jggimg"><img src="img/jgg06.png"/></div>
+			                    <div class="mui-media-body">快洗车</div></a></li>
+			           
+			        </ul> 
+			    </div>
+         	</div>
+         	
+         </div>
+         <!--九宫格结束-->
+         <div class="footer">
+         	 <nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<div><i class="icon iconfont">&#xe609;</i></div>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<div><i class="icon iconfont">&#xe60a;</i></div>
+						<span class="mui-tab-label">订单</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-contact">
+						<div><i class="icon iconfont">&#xe60b;</i></div>
+						<span class="mui-tab-label">我的</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<div><i class="icon iconfont">&#xe60c;</i></div>
+						<span class="mui-tab-label">更多</span>
+					</a>
+		   </nav>
+         </div>
+	</div>
+</body>
+</html>

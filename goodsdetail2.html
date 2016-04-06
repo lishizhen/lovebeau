@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>产品详情</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+       <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      	/*	var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});*/
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 });
+		 $(".kexuan_con ul li").on("click tap",function(){
+		 	$(this).addClass("cur").siblings().removeClass("cur")
+		 });
+		 	 
+		 $("header button.mui-pull-right").on("tap",function(){
+	 	 	$(".sdxiala").toggle()	
+	      });
+	      
+	      $(".newbottom ul li").on("tap",function(){
+	      	$(this).addClass("active").siblings().removeClass("active")
+	      });
+	  })
+    </script>
+</head>
+<body>
+	<div class="goodsdetailmian2">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">	   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>		
+			  </button>
+			  <h1 class="mui-title">产品详情</h1>
+			  <div class="sdxiala">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell li01"><i class="icon iconfont">&#xe616;</i>
+							消息 <span class="mui-badge mui-badge-primary">14</span>
+						</li>
+						<li class="mui-table-view-cell li02"><i class="icon iconfont">&#xe609;</i>首页</li>
+					</ul>
+			  </div>
+		</header>
+
+		<div class="clear"></div>
+
+		<!--
+        	轮播图开始
+        -->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner3.jpg">
+						</a>
+					</div>
+			</div>
+		</div>		
+		<!--
+        	轮播图结束
+        -->
+
+			<!--
+            	公告开始：
+            -->
+            <div class="gonggao">
+				<div class="txtMarquee-left">				
+					<div class="bd">
+						<ul class="infoList">
+							<li><a href="#">中国打破了世界软件巨头规则</a><span>[11-11]</span></li>
+							<li><a href="#">施强：高端专业语言教学</a><span>[11-11]</span></li>
+							<li><a href="#">新加坡留学，国际双语课程</a><span>[11-11]</span></li>
+							<li><a href="#">高考后留学日本名校随你选</a><span>[11-11]</span></li>
+							<li><a href="#">教育培训行业优势资源推介</a><span>[11-11]</span></li>
+							<li><a href="#">女友坚持警局完婚不抛弃</a><span>[11-11]</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+			jQuery(".txtMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50});
+			</script>
+		<!--
+        	公告结束：
+        -->
+        <div class="goodstitle goodstitle2">	
+        	<p class="pri">￥29.9元<span><i class="icon iconfont">&#xe612;</i>销量：55</span></p>
+        	<p class="superMarket_price">超市价：￥26.6元</p>
+        </div>
+        <div class="clear"></div>
+        <div class="kexuan">
+        	<div class="kexuan_con">
+				<h2>可选套餐</h2>
+                <ul>
+                    <li><a href="#">基础套餐</a></li>
+                    <li><a href="#">基础套餐+半贴延长</a></li>
+                    <li class="cur"><a href="#">基础套餐+全贴片</a></li>
+                    <li><a href="#">基础套餐+光疗延长</a></li>  
+                </ul>				
+        	</div>        	
+        </div>
+        <div class="clear"></div>
+		<div class="manzeng manzeng2">
+			<ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe613;</i><span class="hei">预约时间</span><span class="shtime">2015-07-21 10:00-12:00</span></p>							
+					    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe617;</i><span class="hei">预约地址：</span><span class="shtime">由香之谜语洗护用品旗舰店从广东广州市发货并提供售后服务</span></p>														
+					    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe623;</i><span class="hei">上门保障</span></p>														
+					    </a>				
+				  </li>	
+			 </ul>
+			 <ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe61b;</i><span class="hei">服务说明：</span><span class="shtime">由香之谜语洗护用品旗舰店从广东广州市发货并提供售后服务</span></p>														
+					    </a>
+				   </span>
+				  </li>	
+			</ul>
+			<ul class="mui-table-view">
+				  <li class="mui-table-view-cell buyinfo">				  					    
+							<p><i class="icon iconfont">&#xe60a;</i><span class="hei">购买须知</span></p>
+							<div class="buyinfo_con">
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+							</div>   				
+				  </li>	
+			 </ul>
+			 <ul class="mui-table-view">
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe614;</i><span class="hei">图文详情</span></p>														
+					    </a>				
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe60a;</i><span class="hei">产品参数</span></p>														
+					    </a>				
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p class="tes"><i class="icon iconfont">&#xe616;</i><span class="hei">累计评价<span class="yellowF">(512)</span><span class="fr"><i class="yellowF">812</i>人购买</span></span></p>														
+					    </a>				
+				  </li>	
+			 </ul>			
+		</div>
+		
+		<div class="evaluation evaluation2 mb50">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+<!--	<div class="detailbottom">
+				<nav class="mui-bar mui-bar-tab">
+					<a id="defaultTab" class="mui-tab-item" href="aidachu.html">
+						<div><i class="icon iconfont">&#xe61d;</i></div>
+						<span class="mui-tab-label">收藏</span>
+					</a>
+					<a class="mui-tab-item" href="aidachu2.html">
+						<div><i class="icon iconfont">&#xe61c;</i></div>
+						<span class="mui-tab-label">购物车</span>
+					</a>
+					<a class="mui-tab-item mui-active" href="my.html">
+						<div><i class="icon iconfont">&#xe620;</i></div>
+						<span class="mui-tab-label">一键购买</span>
+					</a>
+					<a class="mui-tab-item joincars" href="ssgoods.html">
+						<span class="mui-tab-label">加入购物车</span>						
+					</a>
+				</nav>				
+	</div>-->
+	<div class="newbottom">
+		<ul>
+			<li>
+				<a href="http://www.xjqssc.com/news/knowledge.html">
+					<div><i class="icon iconfont">&#xe61d;</i></div>	
+					<span class="mui-tab-label">收藏</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div><i class="icon iconfont">&#xe61c;</i></div>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+			</li>	
+			<li class="active">
+				<a href="">
+					<div><i class="icon iconfont">&#xe620;</i></div>	
+					<span class="mui-tab-label">一键购买</span>
+				</a>
+			</li>
+			<li>
+				<a href="" class="joincars">				
+					<span class="mui-tab-label">加入购物车</span>
+				</a>
+			</li>			
+		</ul>
+	</div>
+ </div>
+</body>
+</html>

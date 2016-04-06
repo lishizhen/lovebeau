@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>产品详情</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="shoppingcartmain">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>
+			         
+			  </button>
+			  <h1 class="mui-title">购物车</h1>
+		</header>
+		<div class="clear"></div>
+		<div class="shopping orderlistM ">
+			<div class="quanxuanall">
+				<p class=" mui-checkbox mui-left"><input type="checkbox"/>全选</p>				
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">									
+					<a href="#">			
+						<div class="shoppingzt">
+							<div class="zuoall">
+								<h2 class=" mui-checkbox mui-left"><input type="checkbox" checked="checked"/></h2>
+							</div>
+							<div class="youall">
+								<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+								<div class="mui-media-body">							
+									<p class='mui-ellipsis-2'>能和心爱的人一起睡觉，是件幸福的事情；</p>
+									<p class="price">￥135元</p>
+									<span>数量</span>
+									<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+										<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+										<input class="mui-numbox-input" type="number" value="5" />
+										<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</a>
+				</li>
+				
+				<li class="mui-table-view-cell mui-media">									
+					<a href="#">
+						<div class="shoppingzt">
+							<div class="zuoall">
+								<h2 class=" mui-checkbox mui-left"><input type="checkbox"/></h2>
+							</div>
+							<div class="youall">
+								<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+								<div class="mui-media-body">							
+									<p class='mui-ellipsis-2'>能和心爱的人一起睡觉，是件幸福的事情；</p>
+									<p class="price">￥135元</p>
+									<span>数量</span>
+									<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+										<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+										<input class="mui-numbox-input" type="number" value="5" />
+										<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</a>
+				</li>				
+			</ul>
+		</div>
+		<!--猜你喜欢开始-->
+				<div class="guesslove guesslove2 Mt8">			
+				<div class="mui-content">
+					<h2><i class="icon iconfont">&#xe619;</i>猜你喜欢</h2>
+				    <div class="mui-slider">
+				        <div class="mui-slider-group mui-slider-loop">
+				        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            /a></li>				                            
+				                </ul>
+				            </div>
+				            <div class="mui-slider-item">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>				                            
+				                </ul>
+				            </div>
+				            <div class="mui-slider-item">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>				                            
+				                </ul>
+				            </div>
+				            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>				                            
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+				</div>							
+		</div>
+		<!--猜你喜欢结束-->
+		
+		<!--购物车底部开始-->
+		<div class="shoppingbottom">
+      		 <nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item" href="#tabbar">
+						<p class=" mui-checkbox mui-left"><input type="checkbox"/>全选</p>
+					</a>
+					<a class="mui-tab-item a2" href="#tabbar-with-chat">
+						<p>合计<span>￥365.00</span></p>
+						<p class="zonge">总额：￥365.00</p>
+					</a>
+			
+					<a class="mui-tab-item joincars" href="#tabbar-with-map">
+						
+						<span class="mui-tab-label">去结算<em>(1)</em></span>
+					</a>
+		   </nav>					
+		</div>	
+		<!--购物车底部结束-->
+	</div>
+</body>
+</html>

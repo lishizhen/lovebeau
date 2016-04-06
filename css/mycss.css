@@ -1,0 +1,102 @@
+/*全局控制*/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family:"微软雅黑", "黑体";
+	background: #e4e3e6;
+	
+}
+h1, h2, h3, h4, ul, li, p, dl, dt, dd, input, img {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	outline: none;
+	text-shadow: none !important
+}
+ul { list-style:none;}
+a { text-decoration:none;}
+
+/*header.mui-bar { background: -webkit-radial-gradient(#6eb436, #5fa429, #5fa429);}
+header .mui-title { color: #fff;}
+.headtou {position: relative; overflow: hidden;}
+.headtou i { position: absolute; left: 0; top:11px; font-size: 34px; color: #FFFFFF;}
+.headtou input[type=search] { width: 100%; color: #FFFFFF;}
+.headtou .mui-search .mui-placeholder { text-align: left; padding-left: 2%;}
+.headtou .ssbtn { position: absolute; left: 50%; top:1px; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+.headtou a { color: #FFFFFF;}
+.mui-bar-nav~.mui-content { padding-top:0;}*/
+
+/*头部重新样式白底*/
+header.header2.mui-bar { background:#FFFFFF;}
+header .mui-title { color: #fff;}
+header button span { color: #535353;}
+header.header2 .mui-title { color: #535353;}
+.mui-bar .mui-btn-link {color: #535353;}
+
+/*公告开始*/
+/*.gonggao { height: 40px; background: #eeeeee; padding-left: 2%;}
+.gonggao h4 { line-height: 40px; font-weight: normal; font-size: 16px; color: #2e2e2e;}
+.gonggao h4 i { padding-right: 1.5%;}*/
+.txtMarquee-left{ width:90%;  position:relative; text-align: center; margin: 0 auto; height: 35px; line-height: 35px; }		
+.txtMarquee-left .bd{ padding:0px 1.5%;}
+.txtMarquee-left .bd .tempWrap{ width:100% !important; }/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
+.txtMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+.txtMarquee-left .bd ul li{ margin-right:1%;  float:left;  text-align:left; _display:inline; width:auto !important;  }/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
+.txtMarquee-left .bd ul li a { color:#333;}
+.txtMarquee-left .bd ul li span{ color:#999;  }
+.txtMarquee-left b { position: absolute; left: -4%; top:0px; font-weight: normal;}
+
+.clear { clear: both;}
+/*导航部分*/
+.lovenav { background: #fff; width: 100%; text-align: center;  margin: 5px auto 0px; overflow: hidden; padding: 15px 2% 5px;}
+.lovenav li a { display: block; width: 100%; height: 100%;}
+.lovenav .mui-table-view:before { background: none;}
+.lovenav .mui-table-view-cell>a:not(.mui-btn) { overflow: visible;}
+.lovenav .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object { width: 74%;}
+/*.lovenav li:nth-child(1) { background:url(../images/nav01.png) no-repeat; background-size: 100% 100%;}
+.lovenav li:nth-child(2) { background:url(../images/nav02.png) no-repeat; background-size: 100% 100%;}
+.lovenav li:nth-child(3) { background:url(../images/nav03.png) no-repeat; background-size: 100% 100%;}
+.lovenav li:nth-child(4) { background:url(../images/nav04.png) no-repeat; background-size: 100% 100%;}*/
+.lovenav .mui-table-view-cell.mui-active { background: #eee;}
+/*下拉框选择部分*/
+.mui-bar-popover {width: 30%;}		
+.narbar { background: #fff; padding: 5px 0;}
+.narbar ul li { display: inline-block; width: 32.3%; border-right: 1px solid #e5e5e5; text-align: center;}
+.narbar ul li:last-child { border-right: none;}
+.narbar ul li select { margin-bottom: 0; text-align: center; border: none; font-size: 16px;}
+.narbar ul li select option { border: none; padding: 5px 0; text-align: center;}
+.narbar .mui-table-view-cell>a:not(.mui-btn) { margin: -11px -20px;}
+.narbar .mui-table-view-cell { padding: 5px 10px;}
+.narbar .mui-table-view-cell:after { background-color: #FFFFFF;}
+.splist .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{ font-size: 15px; margin-top:8px; color: #333;}
+.splist .greencol { color: #63a82d;}
+.splist ul li a p { text-align: left;}
+.splist .mui-content>.mui-table-view:first-child { margin-top: 0;}
+.splist .mui-table-view:before { top:-5px; height:10px; background-color:#e4e3e6;}
+
+
+/*导航下拉*/
+.sdxiala { position:absolute; right: 0; top:44px;  width: 60%; border-top: 1px solid #cfcece; z-index: 50; display: none;}
+.sdxiala ul li { color: #919598;}
+.sdxiala ul li i { margin-right: 2%;}
+.sdxiala .mui-badge-blue, .mui-badge-primary { background: #f34507;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>订单确认</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 });
+
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="orderconfirmmain">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>			         
+			  </button>
+			  <h1 class="mui-title">订单确认</h1>
+		</header>
+		<div class="clear"></div>
+		<div class="mui-content">
+			<div class="baseinfo">
+				<ul class="mui-table-view">
+					 <li class="mui-table-view-cell">收货人:<span>张三</span></li>
+			         <li class="mui-table-view-cell">配送地址:<span>江北区建新西路235号</span></li>
+			         <li class="mui-table-view-cell">电话:<span>18666558888</span></li>
+				</ul>
+			</div>
+		</div>
+		
+			<div class="basedetail">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+							<a href="#">
+								<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+								<div class="mui-media-body">
+									谷阳庆纯粮酒60°高度老酒150ml
+									<p class="red">￥230.00</p>
+									<p class='mui-ellipsis'>数量:23</p>
+								</div>
+							</a>
+						</li>
+				</ul>
+			</div>
+	
+			<div class="distribute">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-divider">配送方式</li>
+					<li class="mui-table-view-cell">普通快递<span class="yuji">预计 2015年08月12日 24:00点送达</span></li>
+					<li class="mui-table-view-cell jiajili">加急快递+3元<p>当日18点下单，明日24点前送达</p></li>
+					<li class="mui-table-view-cell"></li>
+				</ul>
+			</div>		
+		
+			<div class="payway">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-divider">支付方式</li>
+				</ul>
+				<div class="mui-card">
+						<form class="mui-input-group">
+							<div class="mui-input-row mui-radio">
+								<label class="hdao"><i class="icon iconfont">&#xe633;</i>货到付款</label>
+								<input name="radio1" type="radio" checked>
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label class="zfb"><i class="icon iconfont">&#xe632;</i>支付宝支付</label>
+								<input name="radio1" type="radio">
+							</div>
+							<div class="mui-input-row mui-radio">
+								<label class="weixin"><i class="icon iconfont">&#xe634;</i>微信支付</label>
+								<input name="radio1" type="radio" >
+							</div>
+						</form>
+				</div>				
+			</div>	
+			<div class="payway2">
+				<ul class="mui-table-view">
+					  <li class="mui-table-view-cell">
+					    <a class="mui-navigate-right">						    	
+					     	 支付方式 <span>无可用优惠券</span>
+					    </a>
+					  </li>
+				</ul>
+			</div>
+			<div class="spje">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">商品金额<span class="red">￥120.00元</span></li>
+					<li class="mui-table-view-cell">Vip会员:<span>-￥0.00元</span></li>
+					<li class="mui-table-view-cell">优惠券:<span>-￥0.00元</span></li>
+				</ul>
+			</div>	
+			<div class="realmoney">
+				<div class="realmoney_con">
+					实付金额：<span class="red">￥365.00元</span>
+					<button type="button">提交订单</button>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

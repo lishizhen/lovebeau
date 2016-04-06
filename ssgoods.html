@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>我的</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="ssgoodsmian">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>
+			         
+			  </button>
+			  <h1 class="mui-title">搜索商品</h1>
+		</header>
+		<div class="clear"></div>
+		<!--nav部分开始-->
+      <!--
+        	选择框部分
+        -->
+        <div class="ssgoods_main">
+	        <div class="narbar mui-content">
+	        	<div class="mui-slider">
+		          <div class="mui-slider-group mui-slider-loop">
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+				        	<ul>
+				        		<li class="mui-table-view-cell mui-collapse">
+				        			<a class="mui-navigate-right">
+						        	    <select name="all">
+										  <option value="0">全部款式</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+										</select>  
+									</a>
+				        		</li>				        	
+				        	
+				       		 <li class="mui-table-view-cell mui-collapse">
+				       		 	<a class="mui-navigate-right">
+						      		 <select name="fg">
+										  <option value="0">全部风格</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+									</select>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right">
+						      		 <select name="px">
+										  <option value="0">智能排序</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+									</select>
+								</a>
+							</li>
+						</ul>
+				</div>			
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+				        	<ul>
+				        		<li class="mui-table-view-cell mui-collapse">
+				        			<a class="mui-navigate-right">
+						        	    <select name="all">
+										  <option value="0">aaaaaa</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+										</select>  
+									</a>
+				        		</li>				        	
+				        	
+				       		 <li class="mui-table-view-cell mui-collapse">
+				       		 	<a class="mui-navigate-right">
+						      		 <select name="fg">
+										  <option value="0">bbbbbb</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+									</select>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right">
+						      		 <select name="px">
+										  <option value="0">cccccc</option>
+										  <option>全部款式2</option>
+										  <option>全部款式3</option>
+										  <option>全部款式4</option>
+										  <option>全部款式5</option>
+									</select>
+								</a>
+							</li>
+						</ul>
+			    </div>				
+		  </div>
+		</div>		
+	</div>
+      <!--
+        	选择框部分结束
+        --> 
+        </div>
+        <!--nav部分结束-->
+      <!--
+      	商品列表
+      -->
+	<div class="mygoodslist">			
+				<div class="mui-content" style="background-color:#fff">				   
+				    <ul class="mui-table-view mui-grid-view">
+				        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            <a href="http://www.tmall.com/?from=m">
+				                <img class="mui-media-object" src="images/shuijiao.jpg">
+				                <div class="mui-media-body">19支康乃馨19支康乃馨19支康乃馨19支康乃馨19支康乃馨</div>
+				                <p class="greencol">￥126</p>		
+				                <p class="superMarket_price">超市价：￥14.00元</p>
+				            </a>
+				        </li>
+				        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            <a href="http://www.tmall.com/?from=m">
+				                <img class="mui-media-object" src="images/shuijiao.jpg">
+				                <div class="mui-media-body">19支康乃馨19支康乃馨19支康乃馨19支康乃馨19支康乃馨</div>
+				                <p class="greencol">￥126</p>		
+				                <p class="superMarket_price">超市价：￥14.00元</p>				                	                
+				            </a>
+				        </li>
+				        
+				        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            <a href="http://www.tmall.com/?from=m">
+				                <img class="mui-media-object" src="images/shuijiao.jpg">
+				                <div class="mui-media-body">19支康乃馨19支康乃馨19支康乃馨19支康乃馨19支康乃馨</div>
+				                <p class="greencol">￥126</p>		
+				                <p class="superMarket_price">超市价：￥14.00元</p>				                         
+				            </a>
+				        </li>
+				        
+				        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				            <a href="http://www.tmall.com/?from=m">
+				                <img class="mui-media-object" src="images/shuijiao.jpg">
+				                <div class="mui-media-body">19支康乃馨19支康乃馨19支康乃馨19支康乃馨19支康乃馨</div>
+				                <p class="greencol">￥126</p>		
+				                <p class="superMarket_price">超市价：￥14.00元</p>				                            
+				            </a>
+				        </li>        
+				    </ul>    
+				</div>
+	</div>
+       <!--
+      	商品列表结束
+      -->        
+ 
+	</div>
+</body>
+</html>

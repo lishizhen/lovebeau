@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>回收记录</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.listpicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.dtpicker.js" type="text/javascript" charset="utf-8"></script>   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/mui.listpicker.css"/>
+    <link rel="stylesheet" href="css/mui.dtpicker.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="recyclingmain">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>			         
+			  </button>
+			  <h1 class="mui-title">回收记录</h1>
+		</header>		
+		
+		<div class="clear"></div>
+		<div class="dachu dachu2">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							<p>姓名：<span>马大哈</span></p>
+							<p>回收次数：<span>0次</span></p>
+							<p class="gg"><button class="mui-btn mui-btn-primary"><i class="icon iconfont">&#xe630;</i>逛逛便利店</button></p>
+
+						</div>
+					</a>
+				</li>
+			</ul>		
+		</div>
+		<div class="shanchang">
+
+				<div class="guesslove guesslove2 recycling_con">			
+						<div class="mui-content">
+							<h2>								
+								<p>回收总计</p>
+							</h2>
+						    <div class="mui-slider">
+						        <div class="mui-slider-group mui-slider-loop">
+						        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+						            <div class="mui-slider-item mui-slider-item-duplicate">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#">
+						                    	<img class="mui-media-object" src="img/cyc01.png">
+						                    	<div class="mui-media-body">0.001个</div>
+						                           </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc02.png">
+						                    	<div class="mui-media-body">0.001个</div>
+						                          </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc03.png">
+						                            <div class="mui-media-body">0.001个</div></a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc04.png">
+						                            <div class="mui-media-body">0.001个</div></a></li>
+						                            
+						                </ul>
+						            </div>
+						            <div class="mui-slider-item">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc01.png">
+						                          <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc02.png">
+						                           <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc03.png">
+						                           <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc04.png">
+						                          <div class="mui-media-body">0.001个</div>  </a></li>		                            
+						                </ul>
+						            </div>
+						            <div class="mui-slider-item">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc05.png">
+						                          <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc02.png">
+						                           <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc03.png">
+						                         <div class="mui-media-body">0.001个</div></a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-3"><a href="#"><img class="mui-media-object" src="img/cyc04.png">
+						                         <div class="mui-media-body">0.001个</div></a></li>		                            
+						                </ul>
+						            </div>
+						            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+						            <div class="mui-slider-item mui-slider-item-duplicate">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-2"><a href="#"><img class="mui-media-object" src="img/cyc01.png">
+						                          <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-2"><a href="#"><img class="mui-media-object" src="img/cyc02.png">
+						                          <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-2"><a href="#"><img class="mui-media-object" src="img/cyc03.png">
+						                          <div class="mui-media-body">0.001个</div> </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-2"><a href="#"><img class="mui-media-object" src="img/cyc04.png">
+						                          <div class="mui-media-body">0.001个</div>  </a></li>						                   	                            
+						                </ul>
+						            </div>
+						        </div>
+						    </div>
+						</div>							
+				</div>			
+			
+		</div>
+		<div class="clear"></div>
+		<div class="rili">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<h4><i class="icon iconfont riliicon">&#xe631;</i>2015-7-9<span style="float: right;"><i class="icon iconfont">&#xe62d;</i>失败</span></h4>
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="img/card.png">
+							<div class="mui-media-body">	
+								<p class='mui-ellipsis wei'>未能完成回收服务</p>
+							</div>
+						</a>
+						<div class="jine">
+							<p>回收金额：<span>￥0.00元</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rili">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<h4><i class="icon iconfont riliicon">&#xe631;</i>2015-7-10<span style="float: right;"><i class="icon iconfont">&#xe62f;</i>成功</span></h4>
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="img/card.png">
+							<div class="mui-media-body">	
+								<p class='mui-ellipsis'>易拉罐5个<span>1.2元</span></p>
+								<p class='mui-ellipsis'>塑料瓶20个<span>1.2元</span></p>
+								<p class='mui-ellipsis'>易拉罐5个<span>1.2元</span></p>							
+							</div>
+						</a>
+						<div class="jine">
+							<p>回收金额：<span>￥20.00元</span></p>
+						</div>
+					</li>				
+				</ul>			
+			</div>				
+</body>
+</html>

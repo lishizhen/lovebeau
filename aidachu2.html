@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>爱大厨</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fx.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 });
+		 
+		 $("header button.mui-pull-right").on("tap",function(){
+	 	 	$(".sdxiala").toggle()	
+	      });		 
+	  })
+    </script>
+
+</head>
+<body>
+	<div class="aidcmian">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">	   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>		
+			  </button>
+			  <h1 class="mui-title">爱大厨</h1>
+			  <div class="sdxiala">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell li01"><i class="icon iconfont">&#xe616;</i>
+							消息 <span class="mui-badge mui-badge-primary">14</span>
+						</li>
+						<li class="mui-table-view-cell li02"><i class="icon iconfont">&#xe609;</i>首页</li>
+					</ul>
+			  </div>
+		</header>		
+		
+		<!--
+        	轮播图开始
+        -->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/banner4.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner4.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner3.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner4.jpg">
+						</a>
+					</div>
+		
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/banner4.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>					
+				</div>
+			</div>
+		</div>		
+		<!--
+        	轮播图结束
+        -->
+
+			<!--
+            	公告开始：
+            -->
+			<div class="txtMarquee-left">
+				<b class="teshu"><i class="icon iconfont">&#xe600;</i></b>
+				<div class="bd teshu">
+					<ul class="infoList">
+						<li><a href="#">中国打破了世界软件巨头规则</a><span>[11-11]</span></li>
+						<li><a href="#">施强：高端专业语言教学</a><span>[11-11]</span></li>
+						<li><a href="#">新加坡留学，国际双语课程</a><span>[11-11]</span></li>
+						<li><a href="#">高考后留学日本名校随你选</a><span>[11-11]</span></li>
+						<li><a href="#">教育培训行业优势资源推介</a><span>[11-11]</span></li>
+						<li><a href="#">女友坚持警局完婚不抛弃</a><span>[11-11]</span></li>
+					</ul>
+				</div>
+		</div>
+		<script type="text/javascript">
+		jQuery(".txtMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50});
+		</script>
+		<!--
+        	公告结束：
+        -->
+		<!--
+        	导航部分
+        -->
+        <div class="lovenav">
+        	<ul>
+        		<li><a href="#"></a></li>
+        		<li><a href="#"></a></li>
+        		<li><a href="#"></a></li>
+        		<li><a href="#"></a></li>
+        	</ul>
+        </div>
+        
+ 		<!--
+        	导航部分结束
+        --> 
+        
+        <!--
+        	选择框部分
+        -->
+		<div class="tanchunav">
+			<div class="mui-content">
+				<div class="mui-content-padded">
+					<div style="padding: 10px 0">
+							<div id="segmentedControl" class="mui-segmented-control ">
+								<a class="mui-control-item info info1" href="#topPopover">
+									区域<span class="mui-icon mui-icon-arrowdown"></span>
+								</a>
+								<a class="mui-control-item info" href="#middlePopover">
+									菜系<span class="mui-icon mui-icon-arrowdown"></span>
+								</a>
+								<a class="mui-control-item info" href="#bottomPopover">
+									评价最好<span class="mui-icon mui-icon-arrowdown"></span>
+								</a>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!--第一个弹出菜单开始-->
+			<div id="topPopover" class="mui-popover">
+				<div class="mui-popover-arrow"></div>
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view mui-table-view-radio">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域1
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-selected">
+									<a class="mui-navigate-right">
+										区域 2
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										区域 3
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+			</div>
+			<!--第一个弹出菜单结束-->
+			<!--第二个弹出菜单开始-->
+			<div id="middlePopover" class="mui-popover">
+				<div class="mui-popover-arrow"></div>
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view mui-table-view-radio">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 1</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 2</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 3</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 4</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 5</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 6</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 7</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">菜系 8</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+			</div>
+			<!--第二个弹出菜单结束-->
+			<!--第三个弹出菜单开始-->
+			<div id="bottomPopover" class="mui-popover">
+				<div class="mui-popover-arrow"></div>
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view mui-table-view-radio">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 1
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-selected">
+									<a class="mui-navigate-right">
+										评价 2
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										评价 3
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+			</div>
+			<!--第三个弹出菜单结束-->
+		</div>					
+      <!--
+        	选择框部分结束
+        -->  
+      <!--
+      	商品列表
+      -->
+		<div class="caixilist">			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							<h4>罗整龙 <span>501人预定</span></h4>
+							<p class='mui-ellipsis stare'>
+								<i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i>								
+							</p>
+							<p class='mui-ellipsis'>川菜,家常菜,湘菜<span>158698.5km</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							<h4>罗整龙 <span>501人预定</span></h4>
+							<p class='mui-ellipsis stare'>
+								<i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i>								
+							</p>
+							<p class='mui-ellipsis'>川菜,家常菜,湘菜<span>158698.5km</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							<h4>罗整龙 <span>501人预定</span></h4>
+							<p class='mui-ellipsis stare'>
+								<i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i>								
+							</p>
+							<p class='mui-ellipsis'>川菜,家常菜,湘菜<span>158698.5km</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							<h4>罗整龙 <span>501人预定</span></h4>
+							<p class='mui-ellipsis stare'>
+								<i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i><i class="icon iconfont">&#xe628;</i>								
+							</p>
+							<p class='mui-ellipsis'>川菜,家常菜,湘菜<span>158698.5km</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+       <!--
+      	商品列表结束
+      -->
+	</div>
+			<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			mui('.mui-scroll-wrapper').scroll();
+			mui('body').on('shown', '.mui-popover', function(e) {
+				//console.log('shown', e.detail.id);//detail为当前popover元素
+			});
+			mui('body').on('hidden', '.mui-popover', function(e) {
+				//console.log('hidden', e.detail.id);//detail为当前popover元素
+			});
+			
+			var info = document.getElementsByClassName("info")
+			document.querySelector('#topPopover .mui-table-view-radio').addEventListener('selected',function(e){
+				info[0].innerHTML = e.detail.el.innerText+'<span class="mui-icon mui-icon-arrowdown"></span>';
+			});
+			document.querySelector('#middlePopover .mui-table-view-radio').addEventListener('selected',function(e){
+				info[1].innerHTML = e.detail.el.innerText+'<span class="mui-icon mui-icon-arrowdown"></span>';
+			});
+			document.querySelector('#bottomPopover .mui-table-view-radio').addEventListener('selected',function(e){
+				console.info(e.detail.el.innerText)
+				info[2].innerHTML = e.detail.el.innerText+'<span class="mui-icon mui-icon-arrowdown"></span>';
+			});
+		</script>
+</body>
+</html>

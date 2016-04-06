@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>我的</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+		 
+	  })
+    </script>
+</head>
+<body>
+	<div class="mymian">
+		<header class="mui-bar mui-bar-nav">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			           设置
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"></span>
+			           登陆
+			  </button>
+			  <h1 class="mui-title">我的</h1>
+		</header>
+		<div class="clear"></div>
+		<!--
+        	头像开始
+        -->
+        <div class="photo">
+        	<div class="photo_pic"><img src="img/pic2.jpg" alt="" /></div>
+        	<div class="contact"><p>手机号：<span>15848888888</span></p><p>状态&nbsp;&nbsp;&nbsp;：<span>正常服务</span></p></div>
+        </div>        
+		<!--
+        	头像结束
+        -->
+        <!--列表部分开始 -->
+        <div class="setting">
+        	<div class="account">
+	        	<ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+				    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #ff7200;">&#xe624;</i>
+				      	账户余额
+				    </a>
+				  </li>
+				  <li class="mui-table-view-cell">
+				    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #ff4978;">&#xe62c;</i>
+				      	我的公益账户
+				    </a>
+				  </li>
+				  <li class="mui-table-view-cell">
+				    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #2eaeff;">&#xe62e;</i>
+					     优惠券
+				    </a>
+				  </li>
+				</ul>
+		   </div>
+		   	<div class="addressmanagement">
+				<ul class="mui-table-view">
+					  <li class="mui-table-view-cell">
+					    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #ff9600;">&#xe629;</i>
+					      	地址管理
+					    </a>
+					  </li>		
+				</ul>
+		   	</div>
+		   	<div class="shoucang">
+				<ul class="mui-table-view">
+					  <li class="mui-table-view-cell">
+					    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #11bd2d;">&#xe62b;</i>
+					      	我的收藏
+					    </a>
+					  </li>	
+					  <li class="mui-table-view-cell">
+					    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #ff0404;">&#xe62a;</i>
+					      	推荐好友
+					    </a>
+					  </li>						  
+				</ul>		   		
+		   	</div>
+		   	<div class="usehelp">
+				<ul class="mui-table-view">
+					  <li class="mui-table-view-cell">
+					    <a class="mui-navigate-right"><i class="icon iconfont" style="color: #ff3ea2;">&#xe61b;</i>
+					      	使用帮助
+					    </a>
+					  </li>					  
+				</ul>		   		
+		   	</div>	
+        </div>	
+        <!--列表部分结束 -->
+	</div>
+</body>
+</html>

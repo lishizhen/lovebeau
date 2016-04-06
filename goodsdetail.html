@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>产品详情</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 });
+		 
+
+	     
+	  
+	  	var fl=true;
+		$(document).on("tap scroll",function(){
+			var scrollTop= $(this).scrollTop();
+		  	if(fl&&$(".sdxiala").is(":visible")||scrollTop>0){ $(".sdxiala").hide();}		  	
+		 });
+		 
+		 $("header button.mui-pull-right").on("tap",function(){
+		 	 	if($(".sdxiala").is(":hidden")) {$(".sdxiala").show();fl=true; }
+		 	 	else {$(".sdxiala").hide();fl=false; }		 	 
+		 	 	event.stopPropagation();
+		  });
+		  
+		   $("header button.mui-pull-left").on("tap",function(){
+		   		fl=false;
+		   });
+		  $(".newbottom ul li").on("tap",function(){
+	      	$(this).addClass("active").siblings().removeClass("active")
+	      });
+	      
+		$("header .sdxiala li").on("tap",function(){
+			document.location.href = $(this).attr("id") 
+		})
+	      
+	      
+	      
+	  })
+    </script>
+</head>
+<body>
+	<div class="goodsdetailmian">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>
+			         
+			  </button>
+			  <h1 class="mui-title">产品详情</h1>
+			   <div class="sdxiala">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell li01" id="aidachu.html"><i class="icon iconfont">&#xe616;</i>
+							消息 <span class="mui-badge mui-badge-primary">14</span>
+						</li>
+						<li class="mui-table-view-cell li02" id="index.html"><i class="icon iconfont">&#xe609;</i>首页</li>
+					</ul>
+			  </div>
+		</header>
+		<div class="clear"></div>
+		<!--
+        	轮播图开始
+        -->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/banner2.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner2.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner2.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/banner2.jpg">
+						</a>
+					</div>
+		
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/banner2.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>					
+				</div>
+			</div>
+		</div>		
+		<!--
+        	轮播图结束
+        -->
+        <div class="goodstitle">
+        	<h2>夏日风情 生活用品,啫喱水300ml</h2>	
+        	<p class="pri">￥29.9元<span><i class="icon iconfont">&#xe612;</i>销量：55</span></p>
+        	<p class="superMarket_price">超市价：￥26.6元</p>
+        </div>
+        <div class="clear"></div>
+        <div class="quality">
+        	<div class="quality_con">
+        		<div class="qua_img"><img src="img/img01.png"/></div>
+        		<div class="qua_img"><img src="img/img02.png"/></div>
+        		<div class="qua_img"><img src="img/img03.png"/></div>
+        		<div class="qua_img"><img src="img/img04.png"/></div>       		
+        	</div>        	
+        </div>
+		<div class="manzeng">
+			<ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+				    <a class="mui-navigate-right">
+				      <p class="manzeng_pic"><img src="img/manzeng.png"/></p>
+				      <p class="manzeng_quan">10元<span>抵用券</span></p>
+				      <p class="manprice">满49元</p>
+				      <p class="zeng">赠10元优惠券x1</p>
+				    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+				    <a class="mui-navigate-right">
+				      <p class="manzeng_pic"><img src="img/manzeng.png"/></p>
+				      <p class="manzeng_quan">10元<span>抵用券</span></p>
+				      <p class="manprice">满49元</p>
+				      <p class="zeng">赠10元优惠券x1</p>
+				    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe613;</i><span class="hei">送货时间</span><span class="shtime">2015-07-21 10:00-12:00</span></p>
+							<p class="free">免费送货</p>
+					    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe61b;</i><span class="hei">服务：</span><span class="shtime">由香之谜语洗护用品旗舰店从广东广州市发货并提供售后服务</span></p>														
+					    </a>
+				   </span>
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe614;</i><span class="hei">图文详情</span></p>														
+					    </a>				
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe60a;</i><span class="hei">产品参数</span></p>														
+					    </a>				
+				  </li>
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p class="tes"><i class="icon iconfont">&#xe616;</i><span class="hei">累计评价<span class="yellowF">(512)</span><span class="fr"><i class="yellowF">812</i>人购买</span></span></p>														
+					    </a>				
+				  </li>				  
+			</ul>
+		</div>
+		
+		<div class="evaluation">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="guesslove mb50">			
+				<div class="mui-content">
+					<h2><i class="icon iconfont">&#xe619;</i>猜你喜欢</h2>
+				    <div class="mui-slider">
+				        <div class="mui-slider-group mui-slider-loop">
+				        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            /a></li>				                            
+				                </ul>
+				            </div>
+				            <div class="mui-slider-item">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>				                            
+				                </ul>
+				            </div>
+				            <div class="mui-slider-item">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>				                            
+				                </ul>
+				            </div>
+				            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                            </a></li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+				                           </a></li>				                            
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+				</div>							
+		</div>
+	<div class="newbottom">
+		<ul>
+			<li>
+				<a href="http://www.xjqssc.com/news/knowledge.html">
+					<div><i class="icon iconfont">&#xe61d;</i></div>	
+					<span class="mui-tab-label">收藏</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div><i class="icon iconfont">&#xe61c;</i></div>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+			</li>	
+			<li class="active">
+				<a href="">
+					<div><i class="icon iconfont">&#xe61f;</i></div>	
+					<span class="mui-tab-label">一键预约</span>
+				</a>
+			</li>
+			<li>
+				<a href="" class="joincars">				
+					<span class="mui-tab-label">加入购物车</span>
+				</a>
+			</li>			
+		</ul>
+	</div>
+		
+	</div>
+</body>
+</html>

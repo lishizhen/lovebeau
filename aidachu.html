@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>产品详情</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.listpicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.dtpicker.js" type="text/javascript" charset="utf-8"></script>   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />  
+    <link rel="stylesheet" type="text/css" href="css/mui.listpicker.css"/>
+    <link rel="stylesheet" href="css/mui.dtpicker.css" />
+    <link rel="stylesheet" href="css/zhbcss.css" />
+    <script src="js/jquery.alert.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	$(function(){
+      		var slider = mui("#slider");
+			slider.slider({
+				interval: 3000
+			});
+		 swipeBack:true;
+		 $(".mui-collapse").on("tap",function(){
+		 	return false;
+		 })
+
+		var ycTime=document.getElementById("dateaa");
+		document.getElementById("alertBtn").addEventListener('tap', function() {
+			if(ycTime.value.length == 0){
+				webToast("请选择用餐时间！");
+			}else{
+				//预约成功
+				showWebAlert();
+			}
+		});
+		document.getElementById("colse").addEventListener('tap', function() {
+			hideWebAlert();
+		});
+		
+	 });
+    </script>
+</head>
+<body>
+	<div class="goodsdetailmian3">
+		<header class="mui-bar mui-bar-nav header2">
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-left">			   
+			     <span class="mui-icon mui-icon-left-nav"></span>
+			  </button>
+			  <button class="mui-btn mui-btn-link mui-btn-nav mui-pull-right">			   
+			    <span class="mui-icon mui-icon-right-nav"><i class="icon iconfont">&#xe607;</i></span>			         
+			  </button>
+			  <h1 class="mui-title">爱大厨</h1>
+		</header>		
+		
+		<div class="clear"></div>
+		<div class="dachu">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							付小兵
+							<p class='mui-ellipsis'>85640342</p>
+							<p><i class="icon iconfont orangecol">&#xe621;</i><i class="icon iconfont orangecol">&#xe621;</i><i class="icon iconfont">&#xe621;</i><i class="icon iconfont">&#xe621;</i><i class="icon iconfont">&#xe621;</i></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="peopleyd">
+				<span>333</span><br />
+				<p>人预定</p>
+			</div>			
+		</div>
+		<div class="shanchang">
+
+				<div class="guesslove guesslove2">			
+						<div class="mui-content">
+							<h2>
+								<p><span>擅长</span>融合菜系</p>
+								<p><span>服务</span>沙坪坝，江北 ，渝北</p>
+							</h2>
+						    <div class="mui-slider">
+						        <div class="mui-slider-group mui-slider-loop">
+						        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+						            <div class="mui-slider-item mui-slider-item-duplicate">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            /a></li>				                            
+						                </ul>
+						            </div>
+						            <div class="mui-slider-item">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                           </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>				                            
+						                </ul>
+						            </div>
+						            <div class="mui-slider-item">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                           </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>				                            
+						                </ul>
+						            </div>
+						            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+						            <div class="mui-slider-item mui-slider-item-duplicate">
+						                <ul class="mui-table-view mui-grid-view">
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                            </a></li>
+						                    <li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="#"><img class="mui-media-object" src="img/shuijiao.jpg">
+						                           </a></li>				                            
+						                </ul>
+						            </div>
+						        </div>
+						    </div>
+						</div>							
+				</div>			
+			
+		</div>
+		<div class="clear"></div>
+		<div class="manzeng manzeng2">
+			<ul class="mui-table-view">
+				  <li class="mui-table-view-cell lidate">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe61e;</i><span class="hei">用餐时间：</span> <input type="text" id='dateaa' placeholder="请选择时间..." data-options='{}' class="btn mui-btn mui-btn-block" /></p>							
+					    </a>					   
+				   </span>
+				  
+				  </li>
+				  <li class="mui-table-view-cell">				  			    
+						<p><i class="icon iconfont">&#xe623;</i><span class="hei">做几个菜：六菜/99元（建议四人用餐）</span></p>																			   				
+				  </li>					  
+			 </ul>
+			 <ul class="mui-table-view">
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe623;</i><span class="hei">上门保障</span></p>														
+					    </a>				
+				  </li>				 	
+				  <li class="mui-table-view-cell">
+				  	<span class="mui-ellipsis-2">
+					    <a class="mui-navigate-right">
+							<p><i class="icon iconfont">&#xe61b;</i><span class="hei">服务说明：</span><span class="shtime">由香之谜语洗护用品旗舰店从广东广州市发货并提供售后服务</span></p>														
+					    </a>
+				   </span>
+				  </li>	
+			</ul>
+			<ul class="mui-table-view">
+				  <li class="mui-table-view-cell buyinfo">				  					    
+							<p><i class="icon iconfont">&#xe60a;</i><span class="hei">购买须知</span></p>
+							<div class="buyinfo_con">
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+								<h4>有效期：</h4>
+								<p>2015.7.21至2015.12.15</p>
+							</div>   				
+				  </li>	
+			 </ul>
+			 <ul class="mui-table-view">
+				  <li class="mui-table-view-cell">				  
+					    <a class="mui-navigate-right">
+							<p class="tes"><i class="icon iconfont">&#xe616;</i><span class="hei">累计评价<span class="yellowF">(512)</span><span class="fr"><i class="yellowF">812</i>人购买</span></span></p>														
+					    </a>				
+				  </li>	
+			 </ul>			
+		</div>
+		
+		<div class="evaluation evaluation2">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							麦甜甜
+							<p class='mui-ellipsis'>送给朋友的，他还说质量很不错呢！</p>
+							<p class='mui-ellipsis'>2015-8-4 <span>颜色：蓝粉色</span> <span>尺码：L</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	<div class="detailbottom">
+        	 <nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item" href="#tabbar">
+						<div><i class="icon iconfont">&#xe61d;</i></div>
+						<span class="mui-tab-label">收藏</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<div><i class="icon iconfont">&#xe61c;</i></div>
+						<span class="mui-tab-label">购物车</span>
+					</a>
+					<a class="mui-tab-item mui-active" href="#tabbar-with-contact">
+						<div><i class="icon iconfont">&#xe620;</i></div>
+						<span class="mui-tab-label">一键购买</span>
+					</a>
+					<a class="mui-tab-item joincars" href="#tabbar-with-map">
+						
+						<span class="mui-tab-label" id="alertBtn">预约该厨师</span>
+					</a>
+		   </nav>		
+		
+	</div>
+	
+	</div>
+	<div id="webAlert">
+		<div class="header">提示信息</div>
+		<div class="body">
+			预约成功，是否进入购物车？
+		</div>
+		<div class="footer">
+			<button type="button" id="colse" class="colse">否</button>
+			<button type="button">是</button>
+		</div>
+	</div>
+	<!--背景遮罩-->
+	<div class="webalert-in"></div>
+		<script>
+			(function($) {
+				$.init();
+				var result = $('#dateaa')[0];
+				var btns = $('.btn');
+				var pickers = {};
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						pickers[id] = pickers[id] || new $.DtPicker(options);
+						pickers[id].show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							btn.value = rs.text;
+						});
+					}, false);
+				});
+			
+			})(mui);
+		</script>
+</body>
+</html>
